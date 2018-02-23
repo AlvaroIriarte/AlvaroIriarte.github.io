@@ -1,0 +1,167 @@
+html,body {
+		
+		height:100%;
+		width: 100%;
+		background-color:#f1f1f1;
+		
+}
+
+
+	
+header{
+	display: flex;
+	background: #4CAF50;
+	padding: 30px 0px;
+	height: 5%;
+	
+}
+header a{
+	width: 10%;
+}
+
+#buscador{
+	
+	height: 90%;
+	width: 90%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+#input-search {
+	height: 50%;
+	width: 30%;
+}
+	
+#logo{
+	
+	height: 100%;
+	margin-left: 10px;
+	
+}
+#FONDO {
+	display:flex;
+    border: 3px solid black;
+    background:url(https://static01.nyt.com/images/2017/11/30/arts/30coco-reax/29coco-reax-facebookJumbo.jpg);
+    background-size: 1350px;
+	height:450px;
+	margin-left: 15%;
+	margin-right: 15%;
+		
+}
+.titulo {
+	color: white;
+	font-size:3em;
+}
+
+nav {
+	display:flex;
+	height:10%;
+	width:100%;
+	background-color: transparent;
+	justify-content:center;
+	align-items:center;
+	align-self: flex-end;
+	
+
+}
+main {
+	display:flex;
+	height:100%;
+	background-color: white;
+	margin-left: 30%;
+	margin-right: 15%;
+	flex-direction: column;
+	align-items:center;
+	justify-content:top;
+
+	
+	
+
+}
+
+section {
+	display:flex;
+	height:200px;
+	width:90%;
+	background-color: white;
+	margin-top: 10px;
+	margin-right:10px;
+	
+	
+}
+
+
+
+#sinopsis{
+	border-bottom: 1px solid black;
+	
+	
+	}
+#trailer{
+	border-bottom: 1px solid black;
+	height: 520px;
+	
+	}
+	
+	
+#enlaces {
+	justify-content:center;
+	border-bottom: 1px solid black;
+	
+	height: 60px;
+	
+	}
+#comentarios {
+justify-content:center;
+	
+	}
+
+.trailer{
+	background-color: #4CAF50;
+	
+	}
+.ver{
+    display:flex;
+	background-color: #4CAF50;
+	height: 50px;
+	width:200px;
+	justify-content:center;
+}
+
+aside {
+	display:flex;
+    background-color: white;
+	margin-left:15%;
+	margin-top: -56.6%;
+	width: 13%;
+	height: 110%;
+	justify-content:center;
+	flex-direction: column;
+	align-items:center;		    
+}
+.imagen   {
+    margin: -15px;
+    margin-top: -150px;
+    margin-bottom: 30px;
+}
+#gif {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	background-color:transparent;
+	justify-content:flex-end;
+	margin-bottom:2px;
+	
+	
+
+}
+
+#pie {
+	display: flex;
+	position: absolute;
+	justify-content: space-around;
+	width:100%;
+	background-color: black;
+	color:white;
+}
+
