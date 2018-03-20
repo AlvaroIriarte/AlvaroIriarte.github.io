@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlvaroIriarte</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body style="background-color: #1f1f1f;color: white;">
+    <header>
+        <div class="container-header">
+            <div class="logo-title">
+                
+                <h4>Modelado</h4>
+            </div>
+            <a href="portfolio.html"><i class="fa fa-home"></i></a>
+        </div>
+    </header>
+    
+    <div class="container-portada">
+        <div class="capa-gradient"></div>
+        <div class="container-details">
+            <div class="details">
+                <h1>Proyectos</h1>
+				 <hr>
+                <p>Todos estos proyectos han sido desarollados a lo largo de mi formación profesional en U-tad con softwares como Autodesk Maya, Autodesk Mudbox, 3dmax, Zbrush, Photoshop...</p>
+                <a href="info.html"><button>Info</button></a> 
+				<!-- soy incapaz de hacerlo de otra manera, para poder darle estilo y que actue como si fuese un botton, por eso lo meto dentro del a, tengo este error reiteradas veces y no se como solucionarlo -->
+            </div>
+        </div>
+    </div>
+    
+    <main>
+	
+    <article id="descrp1" class="descripcciones_details">
+        <h1>Trompeta</h1>
+        <hr>
+        <p>Este fue mi primer "proyecto" como modelador.Estamos ante un modelado poligonal, se trata de una french horn modelada en Autodesk Maya, solamente con el uso de curvas.</p>
+    </article>
+    <article id="descrp2" class="descripcciones_details" style="display: none;">
+        <h1>Guitarra</h1>
+        <hr>
+        <p>Modelado poligonal en quads, hecho en Maya, texturizado en Autodesk Mudbox, contiene todos los UVs de la superficie poligonal corréctamente desplegados , conseguido a través de polígonos simples. </p>
+    </article>
+    <article id="descrp3" class="descripcciones_details" style="display: none;">
+        <h1>Cabaña</h1>
+        <hr>
+        <p>Cabaña de roble diseñada para videojuegos modelada en quads, contiene UVs correctamente desplegadas, modelado llevado acabo en Autodesk Maya y texturizado en ZBrush</p>
+    </article>
+    <article id="descrp4" class="descripcciones_details" style="display: none;">
+        <h1>Avro 504k</h1>
+        <hr>
+        <p>Avión usado en la segunda Guerra Mundial, modelado poligonal, contiene UVs correctamente desplegadas, texturizado en Autodesk Mudbox, iluminado con un HDRI y renderizado en Arnold.</p>
+    </article>
+	<section style="margin-top: 20px;">
+		<div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/trompeta.png" alt="Smiley face" style="width:100%">
+                <div class="text">Trompeta</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/render.jpeg" alt="Smiley face" style="width:100%">
+                <div class="text">Guitarra</div>
+            </div>
+
+        	<div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/Casa.png" alt="Smiley face" style="width:100%">
+                <div class="text">Casa</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/render.png" alt="Smiley face" style="width:100%">
+                <div class="text">Avro 504k</div>
+            </div>
+    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    	</div>
+        <br>
+    	<div style="text-align:center">
+    		<span class="dot" onclick="currentSlide(1)"></span> 
+    		<span class="dot" onclick="currentSlide(2)"></span> 
+    		<span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+    	</div>
+</section>
+	
+    </main>
+<script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+    console.log("pruebas"+slideIndex);
+    jQuery(".descripcciones_details").hide();
+    jQuery("#descrp"+slideIndex).show();
+    console.log(slideIndex);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

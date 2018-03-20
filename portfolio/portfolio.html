@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/cargando.css">
+</head> 
+ 
+   
+
+<body>
+	<div class="loading">
+		<div class="loading-text">
+			<span class="loading-text-words">C</span>
+			<span class="loading-text-words">A</span>
+			<span class="loading-text-words">R</span>
+			<span class="loading-text-words">G</span>
+			<span class="loading-text-words">A</span>
+			<span class="loading-text-words">N</span>
+			<span class="loading-text-words">D</span>
+			<span class="loading-text-words">O</span>
+		</div>
+	</div>
+	<audio src="sound/main.mp3" autoplay loop></audio>
+	<aside id="info">
+		<a href="info.html"><h3>Info</h3></a>
+	</aside>
+    <div id="wrapper">
+        <section id="bloque1">
+        	<ul class="animacion ocultar">
+				<li>A</li>
+				<li>L</li>
+				<li>V</li>
+				<li>A</li>
+				<li>R</li>
+				<li>O</li>
+				<li>I</li>
+				<li>R</li>
+				<li>I</li>
+				<li>A</li>
+				<li>R</li>
+				<li>T</li>
+				<li>E</li>
+			</ul>
+			<h1 id="explore" style=""> Explore the projects </h1>
+			<p id="scroll">&lt</p>
+        </section>
+        <section id="bloque2">
+			<div class="texto">
+				<a href="modelado.html"><h2>Modelado</h2></a>
+			</div>
+        </section>
+        <section id="bloque3">
+			<div class="texto">
+				<a href="animacion.html"><h2>Animacion</h2></a>
+			</div>
+        </section>
+        <section id="bloque4">
+			<div class="texto">
+				<a href="acabado.html"><h2>Acabados</h2></a>
+			</div>
+        </section>
+    </div>
+	<script type="text/javascript">
+	jQuery( document ).ready(function() {
+		setTimeout(function(){
+			jQuery("#explore").css("font-size","10px");
+			jQuery("#scroll").css("font-size","10px");
+			jQuery(".animacion").removeClass("ocultar");
+		}, 3500);
+		setTimeout(function(){
+			jQuery(".loading").hide();
+		}, 3000);
+	});
+	</script>
+</body>
+
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlvaroIriarte</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body style="background-color: #1f1f1f;color: white;" onscroll="myFunction(this)">
+    <header>
+        <div class="container-header">
+            <div class="logo-title">
+                <h4>Info</h4>
+            </div>
+            <a href="portfolio.html"><i class="fa fa-home"></i></a>
+        </div>
+    </header>
+	<section>
+        <img src="img/fondo.jpg" alt="Smiley face" width="800" height="1200">
+    </section>
+    <main id="contenido_biblio" style="display: none;transition: all 2.5s ease;padding-top: 10%;">
+        <h1>AlvaroIriarte</h1>
+        <center style="margin-top: 20px;">
+            <p>Estudiante del grado superior de Animación 3D, Juegos y Entornos interactivos.Me manejo en la Animación 2D y en la 3D, mucho mejor en la 3D; conocimientos avanzados:  modelado de objetos y acabados(texturizado e iluminación); <br>  <br/>cconocimientos medios:  programación en HTML y CSS, y edición de imágenes; conocimientos básicos: ilustración digital,diseño gráfico y concept art.</p>
+			<br> <br/>
+			<br>  <br/>
+            <p>Animador junior, ahora mismo estoy de practicas en la empresa Illion Studios, como animador de masas.<br>  <br/> Buen conocimiento de los softwares top del momento, Maya, Mudbox, 3dmax, Zbrush, Harmony, Photoshop, Unity.</p>
+			<br>  <br/>
+			<br>  <br/>
+            <p>Si quieres contactarme para algún trabajo o prática o simplemente por algún tipo de duda o curiosidad, no dudes en enviarme mails a <a href="mailto:pichurrins@hotmail.com">pichurrins@hotmail.com</a> , o seguirme en twitter;<a href="https://twitter.com/Gambascrudas?lang=es" style="text-decoration:none ">@gambascrudas</a>  o seguirme en instagram; <a href="https://www.instagram.com/iriarte19/?hl=es" style="text-decoration:none "> @iriarte19</a> .</p>
+			<br> <br/>
+			<br> <br/>
+            <p>Un saludo y muchas gracias por su visita!</p>
+            
+        </center>
+		<!-- no se centrar lo que es esta parte desde el css, no me funciona -->
+        
+    </main>
+	<script type="text/javascript">
+    function myFunction(obj) {
+        if(obj.scrollY < 100){
+            jQuery("#contenido_biblio").hide();
+            jQuery("img").css("filter","blur(0px)");
+        }else{
+            jQuery("#contenido_biblio").show();
+            jQuery("img").css("filter","blur(6px)");
+        }  
+    }
+</script>
+</body>
+</html>
+
+
